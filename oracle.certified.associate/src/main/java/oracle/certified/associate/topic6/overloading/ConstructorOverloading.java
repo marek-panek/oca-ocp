@@ -14,7 +14,6 @@ package oracle.certified.associate.topic6.overloading;
  *          <li>Overloaded constructors must be defined using different argument lists.</li>
  *          <li>Overloaded constructors can’t be defined by just a change in the access modifiers.</li>
  *          <li>Overloaded constructors may be defined using different access modifiers.</li>
- *          
  *          <li>A constructor can call another overloaded constructor by using the keyword this</li>
  *          <li>A constructor can’t invoke a constructor by using its class’s name.</li>
  *          <li>If present, the call to another constructor must be the first statement in a constructor.</li>
