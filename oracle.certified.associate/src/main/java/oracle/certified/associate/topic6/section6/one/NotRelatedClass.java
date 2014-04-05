@@ -1,4 +1,4 @@
-package oracle.certified.associate.topic6.access_modifiers.one;
+package oracle.certified.associate.topic6.section6.one;
 
 /**
  * Example of a not related class within the same package.

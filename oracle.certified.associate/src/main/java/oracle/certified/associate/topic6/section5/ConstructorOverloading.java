@@ -1,4 +1,4 @@
-package oracle.certified.associate.topic6.overloading;
+package oracle.certified.associate.topic6.section5;
 
 /**
  *  <b>| Topic 6.5 | -  <i>Create and overload constructors.</i></b>
@@ -57,6 +57,14 @@ public class ConstructorOverloading {
 
     }
 
+    public ConstructorOverloading(Double d) {
+        System.out.println("Double version " + d);
+    }
+
+    public ConstructorOverloading(Float f) {
+        System.out.println("Float version " + f);
+    }
+
     // ------------------------------------------------------------------------------------------------//
     // Constructors can’t be defined as overloaded ones if they only differ in their access modifiers.
     // ------------------------------------------------------------------------------------------------//
@@ -94,6 +102,13 @@ public class ConstructorOverloading {
         System.out.println(co1);
         System.out.println(co2);
         System.out.println(co3);
+
+        // ------------------------------------------------------------------------------------------------//
+        new ConstructorOverloading(10.0); // Prints: Double version 10.0
+        new ConstructorOverloading(10.0f); // Prints: Float version 10.0
+        // new ConstructorOverloading(null); // The constructor ConstructorOverloading(Double) is ambiguous
+        new ConstructorOverloading((Double) null); // Prints: Double version null
+        new ConstructorOverloading((Float) null); // Prints: Float version null
     }
 
 }

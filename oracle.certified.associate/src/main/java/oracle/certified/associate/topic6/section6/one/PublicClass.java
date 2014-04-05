@@ -1,18 +1,17 @@
-package oracle.certified.associate.topic6.access_modifiers.one;
+package oracle.certified.associate.topic6.section6.one;
 
 /**
- * Sample class with {@code package-private} access modifier.
+ * Example of a class with {@code public} access modifier.
  * 
  * @author mpanek
- * 
  */
-class PackageClass {
+public class PublicClass {
 	public String publicField;
 	protected String protectedField;
 	String packageField;
 	private String privateField;
 
-	public PackageClass() {
+	public PublicClass() {
 		publicField = "<< Public field >>";
 		protectedField = "<< Protected field >>";
 		packageField = "<< Package-private field >>";

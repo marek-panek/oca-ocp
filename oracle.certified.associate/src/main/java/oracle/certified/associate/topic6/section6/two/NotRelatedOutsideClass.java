@@ -1,6 +1,6 @@
-package oracle.certified.associate.topic6.access_modifiers.two;
+package oracle.certified.associate.topic6.section6.two;
 
-import oracle.certified.associate.topic6.access_modifiers.one.PublicClass;
+import oracle.certified.associate.topic6.section6.one.PublicClass;
 
 /**
  * Example of a not related class outside the package.

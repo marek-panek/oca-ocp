@@ -56,4 +56,4 @@
  * 
  * @author mpanek
  */
-package oracle.certified.associate.topic6.access_modifiers;
+package oracle.certified.associate.topic6.section6;
