@@ -1,36 +1,50 @@
 package oracle.certified.associate.common;
 
-import java.io.PrintStream;
+import java.util.EnumSet;
 
 public class Utils {
-	private static final String SEP = "="; //$NON-NLS-1$
-	private static final String LINE_SEP = System.getProperty("line.separator"); //$NON-NLS-1$
+    public enum HeaderPosition {
+        TOP, BOTTOM, BOTH
+    }
 
-	private static final int LINE_LENGTH = 80;
+    private static final char CORNER_CHAR = '+';
+    private static final char HEADER_CHAR = '-';
 
-	public static void printHeader(final PrintStream stream, final String name) {
-		StringBuilder sb = new StringBuilder();
-		stream.println(generateHeader());
-		stream.println(String.format("%1$80s", name));
-		stream.println(generateHeader());
-	}
+    private static final int LINE_LENGTH = 100;
+    private static final String HEADER_FORMAT = "| %1$-" + (LINE_LENGTH - 3) + "s|"; //$NON-NLS-1$
 
-	private static String generateHeader() {
-		StringBuilder sb = new StringBuilder();
+    public static void prettyPrint(final String name) {
+        prettyPrint(name, HeaderPosition.TOP);
+    }
 
-		for (int i = 0; i < LINE_LENGTH; i++) {
-			sb.append(SEP);
-		}
+    public static void prettyPrint(final String name, final HeaderPosition headerPosition) {
+        final StringBuilder sb = new StringBuilder();
 
-		return sb.toString();
-	}
+        if (EnumSet.of(HeaderPosition.TOP, HeaderPosition.BOTH).contains(headerPosition)) {
+            sb.append(generateHeader()).append('\n');
+        }
 
-	public static void test() {
+        sb.append(String.format(HEADER_FORMAT, name));
 
-	}
+        if (EnumSet.of(HeaderPosition.BOTTOM, HeaderPosition.BOTH).contains(headerPosition)) {
+            sb.append('\n').append(generateHeader());
+        }
 
-	public static void out(final Object  obj) {
-		System.out.println(obj);
-	}
+        System.out.println(sb.toString());
+    }
+
+    private static String generateHeader() {
+        final StringBuilder sb = new StringBuilder(LINE_LENGTH);
+
+        for (int i = 0; i < LINE_LENGTH; i++) {
+            sb.append(i == 0 || i == LINE_LENGTH - 1 ? CORNER_CHAR : HEADER_CHAR);
+        }
+
+        return sb.toString();
+    }
+
+    public static void out(final Object obj) {
+        System.out.println(obj);
+    }
 
 }
