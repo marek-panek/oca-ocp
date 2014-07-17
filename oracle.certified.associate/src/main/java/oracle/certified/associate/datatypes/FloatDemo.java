@@ -25,7 +25,7 @@ import oracle.certified.associate.common.Utils.HeaderPosition;
  *  <li>The inequality operator != returns true if either operand is NaN.</li>
  *  <li>In particular, x!=x is true if and only if x is NaN.</li>
  *  <li>If f1 and f2 both represent Float.NaN, then the equals method returns true, even though Float.NaN==Float.NaN has the value false.</li>
- *  <li>If f1 represents +0.0f while f2 represents -0.0f, or vice versa, the equal test has the value false, even though 0.0f==-0.0f has the value true.</li> s
+ *  <li>If f1 represents +0.0f while f2 represents -0.0f, or vice versa, the equal test has the value false, even though 0.0f==-0.0f has the value true.</li>
  * </ul>
  * 
  * This data type should never be used for precise values, such as currency.

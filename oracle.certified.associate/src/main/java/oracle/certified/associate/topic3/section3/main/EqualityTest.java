@@ -70,7 +70,7 @@ public class EqualityTest {
         Utils.prettyPrint("wrapperByte.equals(primitiveByte) --> " + wrapperByte.equals(primitiveByte));
 
         Utils.prettyPrint("primitiveShort == 65 --> " + (primitiveShort == 65));
-        Utils.prettyPrint("primitiveShort == wrapperByte --> " + (primitiveShort == wrapperShort));
+        Utils.prettyPrint("primitiveShort == wrapperShort --> " + (primitiveShort == wrapperShort));
         Utils.prettyPrint("wrapperShort.equals(65) --> " + wrapperShort.equals(65)); // This will return false because there are different types
         Utils.prettyPrint("wrapperShort.equals(primitiveShort) --> " + wrapperShort.equals(primitiveShort));
 
