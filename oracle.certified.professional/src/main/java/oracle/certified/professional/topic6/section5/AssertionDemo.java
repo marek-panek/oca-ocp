@@ -3,7 +3,7 @@ package oracle.certified.professional.topic6.section5;
 import java.util.Date;
 
 /**
- * Demonstrates assertions in Java.
+ * <b>| Topic 6.5 | -  <i>Test invariants by using assertions.</i></b>
  * 
  * <p>
  * The assertion mechanism was added to the language with version 1.4.<br/>
