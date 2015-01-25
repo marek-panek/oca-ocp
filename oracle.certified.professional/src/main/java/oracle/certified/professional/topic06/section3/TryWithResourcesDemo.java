@@ -1,4 +1,4 @@
-package oracle.certified.professional.topic6.section3;
+package oracle.certified.professional.topic06.section3;
 
 /**
  * <b>| Topic 6.3 | -  <i>Develop code that uses try-with-resources statements (including using classes that implement the AutoCloseable interface).</i></b>

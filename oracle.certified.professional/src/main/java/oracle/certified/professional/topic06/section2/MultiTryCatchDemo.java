@@ -1,4 +1,4 @@
-package oracle.certified.professional.topic6.section2;
+package oracle.certified.professional.topic06.section2;
 
 import java.io.IOException;
 import java.sql.SQLException;

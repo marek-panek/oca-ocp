@@ -17,4 +17,4 @@
  *
  * @author mpanek
  */
-package oracle.certified.professional.topic1;
+package oracle.certified.professional.topic01;

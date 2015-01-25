@@ -1,7 +1,7 @@
 /**
  * Covers the <b>&laquo; Exceptions and Assertions &raquo;</b> exam objectives.
  * 
- * <ol start='1'>
+ * <ol start='6'>
  *  <li>Exceptions and Assertions
  *      <ol>
  *          <li>Use throw and throws statements</li>
@@ -15,4 +15,4 @@
  *
  * @author mpanek
  */
-package oracle.certified.professional.topic6;
+package oracle.certified.professional.topic06;

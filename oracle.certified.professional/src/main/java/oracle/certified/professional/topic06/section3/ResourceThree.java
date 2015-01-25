@@ -1,4 +1,4 @@
-package oracle.certified.professional.topic6.section3;
+package oracle.certified.professional.topic06.section3;
 
 /**
  * Demonstrates simple resource which can be used in the {@code try-with-resources} statement.

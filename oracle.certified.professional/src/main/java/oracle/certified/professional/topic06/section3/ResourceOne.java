@@ -1,19 +1,19 @@
-package oracle.certified.professional.topic6.section3;
+package oracle.certified.professional.topic06.section3;
 
 /**
  * Demonstrates simple resource which can be used in the {@code try-with-resources} statement.
  *
  * @author mpanek
  */
-public class ResourceTwo implements AutoCloseable {
+public class ResourceOne implements AutoCloseable {
 
-    public ResourceTwo() {
-        System.out.println("Creating second resource...");
+    public ResourceOne() {
+        System.out.println("Creating first resource...");
     }
 
     @Override
     public void close() {
-        System.out.println("Closing second resource...");
+        System.out.println("Closing first resource...");
     }
 
     @Override
